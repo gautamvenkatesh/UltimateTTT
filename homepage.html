@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = 'stylesheet' href = "/static/style.css">
+    </head>
+    <body>
+        <div class = 'title' >
+            <h1 class= 'title-text'>Ultimate Tic Tac Toe</h1>
+            <h1 class= 'rule-text'>The ultimate version of Tic Tac Toe. Click <a href = 'https://en.wikipedia.org/wiki/Ultimate_tic-tac-toe'>here</a> for rules</h1>
+            <div class = 'user-wrap'>
+                <label class = 'user-label'>Username:</label>
+                <input class = 'username' type = 'text' id = 'user'>
+            </div>
+            <a href = 'https://ultitictactoe.herokuapp.com/create?user=' class = 'b-link' id = 'create'>
+                <button class = 'button' onclick = 'create_game()'>
+                  Create Game
+                </button>
+            </a>
+            <a href = 'https://ultitictactoe.herokuapp.com/join?user=' class = 'b-link' id = 'join'>
+                <button class = 'button' onclick = 'create_game()'>
+                  Join Game
+                </button>
+            </a>
+        </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="/static/home.js"></script>
+    </body>
+</html>

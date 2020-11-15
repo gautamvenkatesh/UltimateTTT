@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = 'stylesheet' href = '/static/index.css'>
+    </head>
+    <body>
+        <div class = 'wait' id = 'wait'>
+            <h1 class = 'wait-text'>Waiting for player to join</h1>
+            <h6 class = 'wait-text'>Use the game ID below</h6>
+            <h6 class = 'wait-text' id = 'gameid'></h6>
+        </div>
+        <div class = 'game'>
+            <div class = 'side-bar'>
+                <div id = 'user1'>
+
+                </div>
+                <div id = 'turn1'>
+
+                </div>
+            </div>
+            <div class = "board">
+                <div class = "wrapper" id= 'wrapper'>
+                    <div class = "row" id = 'row1'>
+                        
+                    </div>
+                    <div class = "row" id = 'row2'>
+                        
+                    </div>
+                    <div class = "row" id = 'row3'>
+                        
+                    </div>
+                </div>
+            </div>   
+            <div class = 'side-bar'>
+                <div id = 'user2'>
+
+                </div>
+                <div id = 'turn2'>
+                    
+                </div>
+            </div>
+        </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src = '/static/main.js'></script>
+    </body>
+</html>
+
